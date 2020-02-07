@@ -53,6 +53,13 @@ namespace Authentication.Models
         [EmailAddress]
         public string Email { get; set; }
 
+
+        [Required]
+        [StringLength(13, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 11)]
+        [DataType(DataType.PhoneNumber)]
+        [Display(Name = "Phone Number")]
+        public string PhoneNumber { get; set; }
+
         [Required]
         [DataType(DataType.Password)]
         [Display(Name = "Password")]

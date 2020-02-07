@@ -151,7 +151,7 @@ namespace Authentication.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new Customer { UserName = model.Name, Email = model.Email, PhoneNumber = model.PhoneNumber };
+                var user = new User { UserName = model.Email, Name = model.Name, Email = model.Email, PhoneNumber = model.PhoneNumber };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
@@ -367,7 +367,7 @@ namespace Authentication.Controllers
                 {
                     return View("ExternalLoginFailure");
                 }
-                var user = new Customer { UserName = model.Email, Email = model.Email };
+                var user = new User { UserName = model.Email, Email = model.Email };
                 var result = await UserManager.CreateAsync(user);
                 if (result.Succeeded)
                 {

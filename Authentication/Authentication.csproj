@@ -189,6 +189,22 @@
     <Compile Include="Migrations\202002071102135_RenamedApplicationUserToCustomer.Designer.cs">
       <DependentUpon>202002071102135_RenamedApplicationUserToCustomer.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202002071151477_ChangedTableNames.cs" />
+    <Compile Include="Migrations\202002071151477_ChangedTableNames.Designer.cs">
+      <DependentUpon>202002071151477_ChangedTableNames.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002071158482_ChangedTheRoleTableName.cs" />
+    <Compile Include="Migrations\202002071158482_ChangedTheRoleTableName.Designer.cs">
+      <DependentUpon>202002071158482_ChangedTheRoleTableName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002071251370_ChangedRoleInIdentity.cs" />
+    <Compile Include="Migrations\202002071251370_ChangedRoleInIdentity.Designer.cs">
+      <DependentUpon>202002071251370_ChangedRoleInIdentity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202002071521261_AddedTheName.cs" />
+    <Compile Include="Migrations\202002071521261_AddedTheName.Designer.cs">
+      <DependentUpon>202002071521261_AddedTheName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -281,6 +297,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202002071102135_RenamedApplicationUserToCustomer.resx">
       <DependentUpon>202002071102135_RenamedApplicationUserToCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002071151477_ChangedTableNames.resx">
+      <DependentUpon>202002071151477_ChangedTableNames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002071158482_ChangedTheRoleTableName.resx">
+      <DependentUpon>202002071158482_ChangedTheRoleTableName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002071251370_ChangedRoleInIdentity.resx">
+      <DependentUpon>202002071251370_ChangedRoleInIdentity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202002071521261_AddedTheName.resx">
+      <DependentUpon>202002071521261_AddedTheName.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
