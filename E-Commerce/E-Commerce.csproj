@@ -225,6 +225,7 @@
     <Content Include="fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="images\billy-graham1.jpg" />
     <Content Include="images\blog-img1.jpg" />
     <Content Include="images\blog-img2.jpg" />
     <Content Include="images\blog-img3.jpg" />
@@ -240,12 +241,15 @@
     <Content Include="images\comment-img1.jpg" />
     <Content Include="images\comment-img2.jpg" />
     <Content Include="images\comment-img3.jpg" />
+    <Content Include="images\Evangelist_Reinhard_Bonnke.jpg" />
     <Content Include="images\farm1.jpg" />
     <Content Include="images\farm2.jpg" />
     <Content Include="images\farm3.jpg" />
     <Content Include="images\fog.jpg" />
     <Content Include="images\green.jpg" />
+    <Content Include="images\Idahosa.jpg" />
     <Content Include="images\leaf.jpg" />
+    <Content Include="images\NevilleJohnson.jpg" />
     <Content Include="images\next.gif" />
     <Content Include="images\port-img1.jpg" />
     <Content Include="images\port-img2.jpg" />
@@ -466,6 +470,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="video\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
