@@ -201,8 +201,7 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\style\font-awesome.css" />
-    <Content Include="Content\style\style.css" />
+    <Content Include="Content\font-awesome.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\fontawesome-webfont.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -422,7 +421,7 @@
     <Content Include="styles\inner.css" />
     <Content Include="styles\pogo-slider.min.css" />
     <Content Include="styles\slider.css" />
-    <Content Include="styles\style.css" />
+    <Content Include="Content\style.css" />
     <Content Include="styles\styleNew.css" />
     <Content Include="styles\testimonial.css" />
     <Content Include="styles\typo.css" />
