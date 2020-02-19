@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using E_Commerce.Models;
 
 namespace E_Commerce.Controllers
 {
@@ -24,11 +25,10 @@ namespace E_Commerce.Controllers
         [Authorize]
         public ActionResult Movies()
         {
+            var context = new ApplicationDbContext();
+            var Movies = context.Movies;
 
-
-            ViewBag.Message = "Your contact page.";
-
-            return View();
+            return View(Movies);
         }
     }
 }
