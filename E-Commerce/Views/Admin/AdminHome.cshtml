@@ -6,10 +6,10 @@
 
 <h2>AdminHome</h2>
 
-@using (Html.BeginForm()) 
+@using (Html.BeginForm("AdminHome", "Admin", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <h4>Movies</h4>
         <hr />
