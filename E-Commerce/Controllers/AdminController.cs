@@ -31,13 +31,13 @@ namespace E_Commerce.Controllers
                     "uctoPzHnQMZdz_A-MYWp2YLxhVk");
 
                 Cloudinary cloudinary = new Cloudinary(account);
+                cloudinary.Api.Timeout = 100000;
 
                 var uploadParams = new VideoUploadParams()
                 {
                     File = new FileDescription($@"{movie.Uri}"),
                     PublicId = $"Videos/{movie.Name}",
-                    EagerAsync = true,
-                    EagerNotificationUrl = "https://mysite.example.com/my_notification_endpoint"
+                    Tags = $"{movie.Name}"
                 };
                 var uploadResult = cloudinary.UploadLarge(uploadParams);
                 movie.Uri = uploadResult.Uri.ToString();

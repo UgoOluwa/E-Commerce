@@ -14,7 +14,7 @@ namespace E_Commerce.Controllers
         }
 
         [Authorize]
-        public ActionResult About()
+        public ActionResult Messages()
         {
             ViewBag.Message = "Your application description page.";
 
@@ -22,8 +22,10 @@ namespace E_Commerce.Controllers
         }
 
         [Authorize]
-        public ActionResult Contact()
+        public ActionResult Movies()
         {
+
+
             ViewBag.Message = "Your contact page.";
 
             return View();
