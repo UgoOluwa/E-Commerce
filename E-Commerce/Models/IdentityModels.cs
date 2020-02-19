@@ -42,5 +42,7 @@ namespace E_Commerce.Models
             modelBuilder.Entity<IdentityRole>().ToTable("Role").Property(p => p.Id).HasColumnName("RoleId");
 
         }
+
+        public System.Data.Entity.DbSet<E_Commerce.Models.Movies> Movies { get; set; }
     }
 }
