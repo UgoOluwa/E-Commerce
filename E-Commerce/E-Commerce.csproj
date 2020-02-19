@@ -213,6 +213,13 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="acornmediaplayer\access-exit-fullscreen.png" />
+    <Content Include="acornmediaplayer\access-fullscreen.png" />
+    <Content Include="acornmediaplayer\access-pause.png" />
+    <Content Include="acornmediaplayer\access-play.png" />
+    <Content Include="acornmediaplayer\access-volume-full.png" />
+    <Content Include="acornmediaplayer\access-volume.png" />
+    <Content Include="acornmediaplayer\acorn.access.css" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
     <Content Include="Content\bootstrap-reboot.css" />
@@ -342,6 +349,8 @@
     <Content Include="Scripts\jquery-3.4.1.slim.js" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-ui-1.10.0.custom.min.js" />
+    <Content Include="Scripts\jquery.acornmediaplayer.js" />
     <Content Include="Scripts\jquery.flexslider-min.js" />
     <Content Include="Scripts\jquery.hoverex.min.js" />
     <Content Include="Scripts\jquery.min.js" />
@@ -429,6 +438,7 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="styles\acornmediaplayer.base.css" />
     <Content Include="styles\bootstrap.min.css" />
     <Content Include="styles\caption-hover.css" />
     <Content Include="styles\circle-hover.css" />
@@ -441,6 +451,7 @@
     <Content Include="styles\slider.css" />
     <Content Include="Content\style.css" />
     <Content Include="styles\styleNew.css" />
+    <Content Include="styles\stylePlayer.css" />
     <Content Include="styles\testimonial.css" />
     <Content Include="styles\typo.css" />
     <Content Include="Web.config" />
@@ -492,10 +503,10 @@
     <Content Include="Views\Roles\Create.cshtml" />
     <Content Include="Views\Roles\Edit.cshtml" />
     <Content Include="Views\Roles\ManageUsers.cshtml" />
+    <Content Include="Views\Home\WatchMovie.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="video\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

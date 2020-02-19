@@ -14,7 +14,8 @@
                 <p class="card-text">@movie.Genre</p>
                 <p class="card-text">@movie.Rating</p>
                 <p class="card-text">@movie.Description</p>
-                <a href="@movie.Uri">Watch</a>
+                <a href="@movie.Uri">Download</a>
+                @Html.ActionLink("Watch", "WatchMovie", movie)
             </div>
         </div>
     </div>

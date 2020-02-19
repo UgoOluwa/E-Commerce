@@ -30,5 +30,11 @@ namespace E_Commerce.Controllers
 
             return View(Movies);
         }
+
+        public ActionResult WatchMovie(Movies movie)
+        {
+
+            return View(movie);
+        }
     }
 }

@@ -1,0 +1,38 @@
+﻿@model E_Commerce.Models.Movies
+@{
+    ViewBag.Title = "WatchMovie";
+}
+
+@section styles{
+    <link href="~/styles/acornmediaplayer.base.css" rel="stylesheet" />
+    <link href="~/styles/stylePlayer.css" rel="stylesheet" />
+}
+
+<h2>WatchMovie</h2>
+
+<div class="main">
+    <h1>@Model.Name</h1>
+    <div class="content">
+        <section>
+            <figure>
+                <video controls="controls" width="100%" height="100%" poster="media/tos-poster.jpg" preload="metadata" aria-describedby="full-descript">
+                    <source type="video/mp4" src="@Model.Uri" />
+                </video>
+                <div class="clearfix"></div>
+            </figure>
+        </section>
+    </div>
+</div>
+<!-- Required by Acorn Media Player -->
+<script src="~/Scripts/jquery.min.js"></script>
+<script src="~/Scripts/jquery-ui-1.10.0.custom.min.js"></script>
+<!-- Optional - for older browser support - Webshim Polyfill -->
+<script src="~/Scripts/modernizr.custom.js"></script>
+<script src="~/Scripts/jquery.acornmediaplayer.js"></script>
+<!-- Call the plugin -->
+<script>
+    jQuery(function () {
+        jQuery('video, audio').acornMediaPlayer();
+    });
+</script>
+<script>var _gaq = [['_setAccount', 'UA-19824700-1'], ['_trackPageview']]; (function (d, t) { var g = d.createElement(t), s = d.getElementsByTagName(t)[0]; g.src = '//www.google-analytics.com/ga.js'; s.parentNode.insertBefore(g, s) }(document, 'script'))</script>
