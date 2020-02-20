@@ -21,6 +21,8 @@ namespace E_Commerce.Models
 
     public class ApplicationDbContext : IdentityDbContext<User>
     {
+        public DbSet<Messages> Messages { get; set; }
+
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

@@ -14,14 +14,15 @@ namespace E_Commerce.Controllers
     {
         // GET: Admin
 
+        #region Add Movies
 
-        public ActionResult AdminHome()
+        public ActionResult AddMovies()
         {
             return View();
         }
 
         [HttpPost]
-        public ActionResult AdminHome(Movies movie)
+        public ActionResult AddMovies(Movies movie)
         {
             try
             {
@@ -36,7 +37,7 @@ namespace E_Commerce.Controllers
                 var uploadParams = new VideoUploadParams()
                 {
                     File = new FileDescription($@"{movie.Uri}"),
-                    PublicId = $"Videos/{movie.Name}",
+                    PublicId = $"Videos/Movies/{movie.Name}",
                     Tags = $"{movie.Name}"
                 };
                 var uploadResult = cloudinary.UploadLarge(uploadParams);
@@ -55,9 +56,56 @@ namespace E_Commerce.Controllers
             return View();
         }
 
+        #endregion
+
+
+        #region Add Messages
+
+        public ActionResult AddMessages()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult AddMessages(Messages movie)
+        {
+            try
+            {
+                Account account = new Account(
+                    "zorn",
+                    "834965577395824",
+                    "uctoPzHnQMZdz_A-MYWp2YLxhVk");
+
+                Cloudinary cloudinary = new Cloudinary(account);
+                cloudinary.Api.Timeout = 100000;
+
+                var uploadParams = new VideoUploadParams()
+                {
+                    File = new FileDescription($@"{movie.Uri}"),
+                    PublicId = $"Videos//Messages/{movie.Topic}",
+                    Tags = $"{movie.Topic}"
+                };
+                var uploadResult = cloudinary.UploadLarge(uploadParams);
+                movie.Uri = uploadResult.Uri.ToString();
+
+                var context = new ApplicationDbContext();
+                context.Messages.Add(movie);
+                context.SaveChanges();
+                ViewBag.Success = "Movie Added Successfully";
+            }
+            catch (Exception e)
+            {
+                ViewBag.ErrorMessage = e.Message;
+            }
+
+            return View();
+        }
+
+        #endregion
+
         public ActionResult Index()
         {
-            return RedirectToRoute("AdminHome");
+            return View();
         }
 
 

@@ -17,9 +17,10 @@ namespace E_Commerce.Controllers
         [Authorize]
         public ActionResult Messages()
         {
-            ViewBag.Message = "Your application description page.";
+            var context = new ApplicationDbContext();
+            var messages = context.Messages;
 
-            return View();
+            return View(messages);
         }
 
         [Authorize]
@@ -28,13 +29,20 @@ namespace E_Commerce.Controllers
             var context = new ApplicationDbContext();
             var Movies = context.Movies;
 
-            return View(Movies);
+            return View((object)Movies);
         }
 
+        [Authorize]
         public ActionResult WatchMovie(Movies movie)
         {
 
             return View(movie);
+        }
+        [Authorize]
+        public ActionResult WatchMessage(Messages message)
+        {
+
+            return View(message);
         }
     }
 }
