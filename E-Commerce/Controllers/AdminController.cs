@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using CloudinaryDotNet;
@@ -28,8 +29,8 @@ namespace E_Commerce.Controllers
             {
                 Account account = new Account(
                     "zorn",
-                    "834965577395824",
-                    "uctoPzHnQMZdz_A-MYWp2YLxhVk");
+                    ConfigurationManager.AppSettings["CloudKey"],
+                    ConfigurationManager.AppSettings["CloudSecret"]);
 
                 Cloudinary cloudinary = new Cloudinary(account);
                 cloudinary.Api.Timeout = 100000;
@@ -73,8 +74,8 @@ namespace E_Commerce.Controllers
             {
                 Account account = new Account(
                     "zorn",
-                    "834965577395824",
-                    "uctoPzHnQMZdz_A-MYWp2YLxhVk");
+                    ConfigurationManager.AppSettings["CloudKey"],
+                    ConfigurationManager.AppSettings["CloudSecret"]);
 
                 Cloudinary cloudinary = new Cloudinary(account);
                 cloudinary.Api.Timeout = 100000;
