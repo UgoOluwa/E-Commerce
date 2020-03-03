@@ -248,7 +248,6 @@
     <Content Include="images\banner4.jpg" />
     <Content Include="images\banner5.jpg" />
     <Content Include="images\banner6.jpg" />
-    <Content Include="images\bg.jpg" />
     <Content Include="fonts\fontawesome-webfont.eot" />
     <Content Include="fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\fontawesome-webfont.woff" />
@@ -444,6 +443,7 @@
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="styles\acornmediaplayer.base.css" />
+    <Content Include="styles\blog.css" />
     <Content Include="styles\bootstrap.min.css" />
     <Content Include="styles\caption-hover.css" />
     <Content Include="styles\circle-hover.css" />
@@ -470,7 +470,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Messages.cshtml" />
     <Content Include="Views\Home\Movies.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
@@ -512,6 +511,7 @@
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Admin\AddMessages.cshtml" />
     <Content Include="Views\Home\WatchMessage.cshtml" />
+    <Content Include="Views\Home\Messages.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

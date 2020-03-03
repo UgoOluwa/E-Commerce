@@ -1,20 +1,94 @@
 ﻿@using E_Commerce.Models
 @model IEnumerable<E_Commerce.Models.Messages>
+
 @{
     ViewBag.Title = "Messages";
 }
+
+
 <h2>@ViewBag.Title.</h2>
 
-@foreach (var message in Model)
-{
-    <div class="col-sm-3">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">@message.Topic</h5>
-                <p class="card-text">@message.Speaker</p>
-                <a href="@message.Uri">Download</a>
-                @Html.ActionLink("Watch", "WatchMessage", message)
-            </div>
+<section class="our-blog" id="blog">
+    <h3 class="text-center slideanim"> <br /></h3>
+    <div class="container">
+        <div class="row">
+            @foreach (var message in Model)
+            {
+                <div class="col-md-3 col-xs-12">
+                    <div class="news-w3ls">
+                        <div class="view view-seventh slideanim">
+                            <img src="~/images/blog1.jpg" alt="" class="img-responsive" />
+                            <div class="mask">
+                                <h5>@message.Topic</h5>
+                                <p>@message.Speaker</p>
+                                <a class="info" href="@message.Uri">Download</a>
+                                @Html.ActionLink("Watch", "WatchMessage", message, new { @class = "info" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-content slideanim">
+                        <p class="p1">@message.Topic</p>
+                        <p class="p2">@message.Speaker</p>
+                        <a class="info" href="@message.Uri">Download</a>
+                        @Html.ActionLink("Watch", "WatchMessage", message, new { @class = "info" })
+                    </div>
+                </div>
+            }
+
+            @* <div class="col-md-3 col-xs-12"> *@
+            @*     <div class="news-w3ls"> *@
+            @*         <div class="view view-seventh slideanim"> *@
+            @*             <img src="~/images/blog2.jpg" alt="" class="img-responsive" /> *@
+            @*             <div class="mask"> *@
+            @*                 <h5>January 10,2016</h5> *@
+            @*                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> *@
+            @*                 <a href="../Shared/blog.html" class="info">Read More</a> *@
+            @*             </div> *@
+            @*         </div> *@
+            @*     </div> *@
+            @*     <div class="blog-content slideanim"> *@
+            @*         <p class="p1">News - January 10,2016</p> *@
+            @*         <a href="../Shared/blog.html"><h4>A Day With Vegetable Farm.</h4></a> *@
+            @*         <p class="p2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> *@
+            @*         <a href="../Shared/blog.html">Read More</a> *@
+            @*     </div> *@
+            @* </div> *@
+            @* <div class="col-md-3 col-xs-12"> *@
+            @*     <div class="news-w3ls"> *@
+            @*         <div class="view view-seventh slideanim"> *@
+            @*             <img src="~/images/blog3.jpg" alt="" class="img-responsive" /> *@
+            @*             <div class="mask"> *@
+            @*                 <h5>January 15,2016</h5> *@
+            @*                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> *@
+            @*                 <a href="../Shared/blog.html" class="info">Read More</a> *@
+            @*             </div> *@
+            @*         </div> *@
+            @*     </div> *@
+            @*     <div class="blog-content slideanim"> *@
+            @*         <p class="p1">News - January 15,2016</p> *@
+            @*         <a href="../Shared/blog.html"><h4>Vegetable Farm For All.</h4></a> *@
+            @*         <p class="p2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> *@
+            @*         <a href="../Shared/blog.html">Read More</a> *@
+            @*     </div> *@
+            @* </div> *@
+            @* <div class="col-md-3 col-xs-12"> *@
+            @*     <div class="news-w3ls"> *@
+            @*         <div class="view view-seventh slideanim"> *@
+            @*             <img src="~/images/blog4.jpg" alt="" class="img-responsive" /> *@
+            @*             <div class="mask"> *@
+            @*                 <h5>January 20,2016</h5> *@
+            @*                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> *@
+            @*                 <a href="../Shared/blog.html" class="info">Read More</a> *@
+            @*             </div> *@
+            @*         </div> *@
+            @*     </div> *@
+            @*     <div class="blog-content slideanim"> *@
+            @*         <p class="p1">News - January 20,2016</p> *@
+            @*         <a href="../Shared/blog.html"><h4>Vegetable Farm For Your Life.</h4></a> *@
+            @*         <p class="p2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> *@
+            @*         <a href="../Shared/blog.html">Read More</a> *@
+            @*     </div> *@
+            @* </div> *@
         </div>
     </div>
-}
+</section>

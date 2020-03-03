@@ -1,5 +1,4 @@
-﻿using System.Web;
-using System.Web.Optimization;
+﻿using System.Web.Optimization;
 
 namespace E_Commerce
 {
@@ -23,10 +22,7 @@ namespace E_Commerce
                       "~/Scripts/bootstrap.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css", "~/Content/style.css", "~/Content/font-awesome.css"));
-
-
+                      "~/Content/style.css"));
         }
     }
 }
