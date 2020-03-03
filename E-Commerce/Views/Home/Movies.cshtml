@@ -5,19 +5,36 @@
 }
 <h2>@ViewBag.Title.</h2>
 
-@foreach (var movie in Model)
-{
-    <div class="col-sm-3">
-        <div class="card">
-            <div class="card-body">
-                <h5 class="card-title">@movie.Name</h5>
-                <p class="card-text">@movie.Genre</p>
-                <p class="card-text">@movie.Rating</p>
-                <p class="card-text">@movie.Description</p>
-                <a href="@movie.Uri">Download</a>
-                @Html.ActionLink("Watch", "WatchMovie", movie)
-            </div>
+<section class="our-blog" id="blog">
+    <h3 class="text-center slideanim"> <br /></h3>
+    <div class="container">
+        <div class="row">
+            @foreach (var movie in Model)
+            {
+                <div class="col-md-3 col-xs-12">
+                    <div class="news-w3ls">
+                        <div class="view view-seventh slideanim">
+                            <img src="~/images/blog1.jpg" alt="" class="img-responsive" />
+                            <div class="mask">
+                                <h5>@movie.Name</h5>
+                                <p>@movie.Genre</p>
+                                <p>Rating: @movie.Rating</p>
+                                <a class="info" href="@movie.Uri">Download</a>
+                                @Html.ActionLink("Watch", "WatchMessage", movie, new { @class = "info" })
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-content slideanim">
+                        <h5>@movie.Name</h5>
+                        <p>@movie.Genre</p>
+                        <p>Rating: @movie.Rating</p>
+                        <p>@movie.Description</p>
+                        <a class="info" href="@movie.Uri">Download</a>
+                        @Html.ActionLink("Watch", "WatchMessage", movie, new { @class = "info" })
+                    </div>
+                </div>
+            }
         </div>
     </div>
-}
+</section>
 
