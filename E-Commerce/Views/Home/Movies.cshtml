@@ -20,7 +20,7 @@
                                 <p>@movie.Genre</p>
                                 <p>Rating: @movie.Rating</p>
                                 <a class="info" href="@movie.Uri">Download</a>
-                                @Html.ActionLink("Watch", "WatchMessage", movie, new { @class = "info" })
+                                @Html.ActionLink("Watch", "WatchMovie", movie, new { @class = "info" })
                             </div>
                         </div>
                     </div>
@@ -30,7 +30,7 @@
                         <p>Rating: @movie.Rating</p>
                         <p>@movie.Description</p>
                         <a class="info" href="@movie.Uri">Download</a>
-                        @Html.ActionLink("Watch", "WatchMessage", movie, new { @class = "info" })
+                        @Html.ActionLink("Watch", "WatchMovie", movie, new { @class = "info" })
                     </div>
                 </div>
             }
