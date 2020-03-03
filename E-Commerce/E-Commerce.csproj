@@ -442,6 +442,7 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="styles\acorn.access.css" />
     <Content Include="styles\acornmediaplayer.base.css" />
     <Content Include="styles\blog.css" />
     <Content Include="styles\bootstrap.min.css" />
